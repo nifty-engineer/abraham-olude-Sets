@@ -1,4 +1,5 @@
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -19,7 +20,9 @@ public class Lab {
      * @return a new Set<Integer> object.
      */
     public Set<Integer> createSet(){
-        return null;
+
+        Set<Integer> set = new HashSet<>();
+        return set;
     }
 
     /**
@@ -28,7 +31,8 @@ public class Lab {
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
-        return 0;
+
+        return set.size();
     }
 
     /**
@@ -39,6 +43,7 @@ public class Lab {
      */
     public void addUniqueItem(Set<Integer> set, int item){
 
+        set.add(item);
     }
 
     /**
@@ -49,5 +54,6 @@ public class Lab {
      */
     public void removeItem(Set<Integer> set, int item){
 
+        set.remove(item);
     }
 }
